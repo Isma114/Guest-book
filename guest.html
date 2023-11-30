@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Ismails Gästbok</title>
+    <link rel="stylesheet" href="guest-style.css">
+    <script src="https://kit.fontawesome.com/321c549bf7.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+
+
+
+      <form action="/skicka" method="post">
+        <h2>Ismails guest <i class="fa-solid fa-book-open"></i> book!</h2>
+        <p>Välkommen till min virtuella gästbok! Jag är glada att du har tagit dig tid att lämna ett avtryck här. 
+          Dela gärna dina tankar, hälsningar eller minnen med oss. 
+          Jag ser fram emot att läsa vad du har att säga och uppskattar din närvaro. 
+          Tack för att du är en del av våra minnen och ögonblick! 
+        </p>
+        <input type="text" name="name" placeholder="Namn" required>
+        <br>
+        <input type="text" name="phone" placeholder="Telefonnummer" required>
+        <br>
+        <input type="email" name="email" placeholder="E-postadress" required>
+        <br>
+        <textarea name="comment" placeholder="Kommentar"></textarea>
+        <br>
+        <input type="submit" id="skicka" value="Skicka">
+      </form>
+
+      <form action="/logout" method="post"> <!-- New form for logout -->
+        <em>Glöm inte att logga ut från gästbokssidan</em>
+        
+        <input id="button" type="submit" value="Logga ut">
+      </form>
+    </div>
+
+    <ul>
+        <!-- INSERT_DYNAMIC_CONTENT_HERE -->
+    </ul>
+
+  </body>
+</html>

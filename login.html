@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logga in guestbook</title>
+        <link rel="stylesheet" href="login-style.css">
+        <script src="https://kit.fontawesome.com/321c549bf7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+
+            <h1>Välkommen till Ismails Gästbok! <i class="fa-solid fa-book-open"></i></h1>
+        </nav>
+        
+        <h4>Logga in för att dela dina tankar och vara en del av vår gemenskap. <em>Jag ser fram emot att höra från dig!</em>
+        </h4>
+        
+        
+        <div id="loginMessage"></div>
+
+        <form action="checklogin" method="post">
+
+            <label for="user"><i class="fa-solid fa-user"></i> Användernamn:</label>
+            <input type="text" name="user" placeholder="Ange användernamn" id="user" required> <br>
+            
+
+            <label for="pass"><i class="fa-solid fa-key"></i> Lösenord:</label>
+            <input type="text" name="pass" placeholder="Ange lösenord" id="pass" required> <br>
+            
+
+            <input type="submit" value="Logga in">
+            
+        </form>
+
+
+
+
+        <footer>  
+            <div class="social"> <!-- Social media iconer -->
+                <p>Kontakta mig på: info@ismail.com eller följ mig på sociala medier:</p>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2023 Ismail M. Adam. All rights reserved.</p>    
+        </footer>
+
+        <script>
+
+            setTimeout(function() {
+              let loginMessageContainer = document.getElementById('loginMessage');
+              if (loginMessageContainer) {
+                loginMessageContainer.innerHTML = ''; 
+                loginMessageContainer.style.display = 'none';
+              }
+            }, 3000); 
+        </script>
+          
+
+
+    </body>
+</html>
